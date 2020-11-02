@@ -1,150 +1,175 @@
-*{
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	
+*
+{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-
+body
+{
+  font-family: montserrat;
+}
 nav
 {
-	background: #00FF00;
-	height: 80px;
-	width: 100%;
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
 }
-
-label.logo 
+label.logo
 {
-	color: white;
-	line-height: 80px;
-	padding: 0 100px;
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-
 nav ul
 {
-	float:right;
-	margin-right: 20px;
-	
+  float: right;
+  margin-right: 20px;
 }
-
 nav ul li
 {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-
 nav ul li a
 {
-	color: white;
-	font-size: 17px;
-	padding: 7px 13px ;
-	border-radius: 3px;
-	text-transform: uppercase;
-	
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 a.active,a:hover
 {
-	background: #1b9bff;
-	transition: .5s;
+  background: #1b9bff;
+  transition: .5s;
 }
-
 .checkbtn
 {
-	font-size: 30px;
-	color: white;
-	float:right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  line-height: 80px;
 }
-
 #check
 {
-	display: none;
+  display: none;
 }
-
-/*
-.bannerImage
-{
-	position:relative;
-	left:345px;
-}
-
-.searchBar
-{
-	position:relative;
-	
-}
-
-.conrnerLogo
-{
-	position:relative;
-}
-
-.body
-{
-	background-color: #008CBA;
-}
-
-.section
-{
-	position:relative;
-}
-
-.section1
-{
-	position:relative;
-}
-
-.section2
-{
-	position:relative;
-}
-
-.footer
-{
-	position:relative;
-}
-*/
-
 @media (max-width: 850px)
 {
-	.checkbtn
-	{
-		display:block;
-	}
-	ul
-	{
-		position: fixed;
-		width:100%;
-		height: 100vh;
-		background: #2c3e50;
-		top: 80px;
-		left: -100%;
-		text-align: center;
-		transition: all .5s;
-	}
-	nav ul li
-	{
-		display:block;
-		margin: 50px 0;
-		line-height: 30px;
-		
-	}
-	nav ul li a
-	{
-		font-size: 20px;
-	}
-	a:hover,a.active
-	{
-		background:none;
-		color: #0082e6;
-	}
-	#check:checked ~ul
-	{
-		left:0;
-	}
-		
+  label.logo
+  {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a
+  {
+    font-size: 16px;
+  }
+}
+@media (max-width: 750px)
+{
+  .checkbtn
+  {
+    display: block;
+  }
+  ul
+  {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a
+  {
+    font-size: 20px;
+  }
+  a:hover,a.active
+  {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul
+  {
+    left: 0;
+  }
+}
+/*Background image css goes here */
+section
+{
+  background: url("backgroundFP1.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+/*adding the logo above the search bar*/
+.logoInsert
+{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+
+}
+/*This is the section for the search feature*/
+.wrapper
+{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /*used to remove the negative margins aka makes them go onto one line*/
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.6);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius:5px;
+  /* making them into one row*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .input
+{
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.searchbtn
+{
+   background: #0082e6;
+   width: 10%;
+   border-radius: 5px;
+   position: relative;
+   cursor: pointer;
+}
+
+.searchbtn .fas
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
 }
