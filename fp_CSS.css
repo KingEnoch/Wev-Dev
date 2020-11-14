@@ -12,13 +12,14 @@ body
 }
 nav
 {
-  background: #0082e6;
+  background: -webkit-linear-gradient(left, #fff5b6,#ffb6c1);
   height: 80px;
   width: 100%;
+  border-bottom: 5px soild blue;
 }
 label.logo
 {
-  color: white;
+  color: black;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -37,7 +38,7 @@ nav ul li
 }
 nav ul li a
 {
-  color: white;
+  color: black;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -52,10 +53,21 @@ a.active,a:hover
 /*Background image css goes here */
 section
 {
-  background: url("backgroundFP1.jpg") no-repeat;
+  /*background: url("backgroundFP1.jpg") no-repeat;*/
+  background: white;-webkit-linear-gradient(left, #ffb6c1, #fff5b6, #b6fff4)
   background-size: cover;
   height: calc(100vh - 80px);
 }
+
+.banner-image{
+    background: url('backgroundFP1.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+
+}
+
 /*adding the logo above the search bar*/
 .logoInsert
 {
@@ -82,7 +94,7 @@ section
   justify-content: space-between;
 }
 
-.wrapper .input
+.wrapper .input[type="text"]
 {
   width: 85%;
   padding: 15px 20px;
@@ -91,6 +103,7 @@ section
   font-weight: bold;
 }
 
+/* search bar stuff*/
 .searchbtn
 {
    background: #0082e6;
@@ -107,4 +120,16 @@ section
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 18px;
+}
+
+/* Map on about ppage*/
+.map
+{
+    position: absolute;
+    top:25%;
+    left:60%;
+    border:3px;
+    border-style: solid;
+    border-color: #8B0000;
+
 }

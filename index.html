@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="fp_CSS.css">
+    <link rel="stylesheet"  href="index_style.css" >
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body>
+  <body onload ="start()">
     <nav>
       <label class="logo">V&E.inc</label>
       <ul>
@@ -18,8 +19,11 @@
       </ul>
     </nav>
     <section>
+      <div class ="banner-image">
+
+      </div>
       <div class = "logoInsert">
-        <img src = "VEinc..gif" width = "300px" height="100"></img>
+        <img src = "VEinc..gif" width = "300px" height="100px"></img>
       </div>
       <div class = "wrapper">
         <input type ="text" class = "input" placeholder = "Search...">
@@ -28,5 +32,37 @@
         </div>
     </section>
     </div>
+    <footer><!-- This is the Footer bar-->
+		<div class= "social-media">
+			<ul>
+				<li><img src="black-github.png"></li>
+				<li><img src="black-instagram.png"></li>
+				<li><img src="black-pinterest.png"></li>
+				<li><img src="black-twitter.png"></li>
+			</ul>
+		</div>
+        <div class="wrapp">
+			<p><a href="index.html">Home</a>
+			| <a href="about.html">About </a>
+			| <a href="https://validator.w3.org/">HTML Validator </a>
+			| <a href="contact.html">Contact Us</a></p>
+
+			<p>Copyright &copy; Vlads & Enoch Online Website|
+			<a href="index.html">VE Inc</a></p>
+
+			<!-- Script 1: Dynamic webpage updates-->
+			<div id= "realtime"> </div>
+			<!-- Script 2: Hit Page Counter-->
+			<div id= "hits"> </div>
+			<!-- Script 3: Browser Detection-->
+			<div id= "browser"> </div>
+			<!-- Script 4:  Scrolling Text-->
+			<form name="msg">
+				<input type="text" size=30 name="message">
+			</form>
+		</div>
+	</footer>
+  <script type="text/javascript" src="index_script.js"></script>
+  <script> function start(){ browserDetection(); myTimer(); hitCount(); scrollBox(); }</script>
   </body>
 </html>

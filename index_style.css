@@ -1,0 +1,42 @@
+
+body{
+   font-family: "Apple Chancery" , cursive;
+}
+
+.social-media{
+	padding-top:20px;
+	height:45px;
+	width:200px;
+	float:right;
+
+}
+.social-media ul{
+	padding:0px;
+	margin: 0px;
+	cursor: pointer;
+}
+.social-media li{
+	float:left;
+	list-style:none;
+	padding-left:15px;
+	cursor: pointer;
+}
+
+.social-media img{
+  width: 32px;
+  height: 32px;
+}
+
+.wrapp{
+	width: 910px;
+	margin-right: auto;
+  margin-left: auto;
+}
+
+footer{
+	background: -webkit-linear-gradient(left,#ffb6c1,#fff5b6);
+	text-align:center;
+	padding: 20px 0;
+	display:block;
+  color: black;
+}
