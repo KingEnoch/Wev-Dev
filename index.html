@@ -4,33 +4,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fp_CSS.css">
     <link rel="stylesheet"  href="index_style.css" >
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body onload ="start()">
     <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
       <label class="logo">V&E.inc</label>
       <ul>
-        <li><a class = "active" href="index.html">Home</a></li>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "contact.html">Contact</a></li>
-        <li><a href = "login.html">Login</a></li>
+        <li><a href = "cart.html"><i class="fas fa-cart-plus"></i></a></li>
+        <li><a class = "active" href="index.html">Home <i class="fa fa-fw fa-home"></i></a></li>
+        <li><a href = "about.html">About <i class="fas fa-address-card"></i></a></li>
+        <li><a href = "contact.html">Contact <i class="fas fa-mobile-alt"></i></a></li>
+        <li><a href = "login.html">Login <i class="fa fa-fw fa-user"></i> </a></li>
       </ul>
     </nav>
     <section>
       <div class ="banner-image">
-
       </div>
       <div class = "logoInsert">
-        <img src = "VEinc..gif" width = "300px" height="100px"></img>
+        <img src = "VEinc..gif" width = "300px" height="100px" ></img>
       </div>
       <div class = "wrapper">
         <input type ="text" class = "input" placeholder = "Search...">
         <div class = "searchbtn">
             <i class = "fas fa-search"></i>
         </div>
+        <div class ="dropdown">
+          <button class="dropbtn">Filters</button>
+          <div class = "dropdown-content">
+            <div id="myBtnContainer">
+              <a class="btn active" onclick="filterSelection('all')"> Show all</a>
+              <a class="btn" onclick="filterSelection('Cakes')"> Cakes</a>
+              <a class="btn" onclick="filterSelection('Ice-Cream')"> Ice-Cream</a>
+            </div>
+          </div>
+      </div>
     </section>
+    <div class="DisplayCakes">
+      <div class= "filterDiv Cakes">
+        <img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img>
+        <img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img>
+      </div>
+      <div class= "filterDiv Ice-Cream"><img href = "#" src = "icecream1.jpg" height = "200px" width="200px" ></img></div>
     </div>
     <footer><!-- This is the Footer bar-->
 		<div class= "social-media">
@@ -44,7 +65,7 @@
         <div class="wrapp">
 			<p><a href="index.html">Home</a>
 			| <a href="about.html">About </a>
-			| <a href="https://validator.w3.org/">HTML Validator </a>
+			| <a href="Sources.html">Sources </a>
 			| <a href="contact.html">Contact Us</a></p>
 
 			<p>Copyright &copy; Vlads & Enoch Online Website|
