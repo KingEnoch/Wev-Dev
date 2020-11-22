@@ -1,0 +1,19 @@
+cake2 = https://www.bbcgoodfood.com/recipes/collection/classic-cake-recipes
+cake3 =https://www.biggerbolderbaking.com/3-layer-cake-made-microwave/
+cake4 = https://www.bbc.co.uk/food/recipes/mary_berrys_perfect_34317
+icecream2 =https://www.irishtimes.com/news/ireland/irish-news/teddy-s-ice-cream-issued-with-closure-order-by-food-safety-body-1.4326489
+icecream3 = https://www.britannica.com/topic/ice-cream
+icecream4 = https://foodfount.com/ice-cream-is-gluten-free-not-gluten-free/
+
+
+<nav class="navbar fixed-bottom navbar-light bg-light">
+<a class="navbar-brand" href="#">Fixed bottom</a>
+</nav>
+
+.contact{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	float: center;
+}

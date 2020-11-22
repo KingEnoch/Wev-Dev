@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login & Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="login_style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap">
+</head>
+<body>
+	<!-- Sign In Tab-->
+	<div class="cont">
+		<div class="form sign-in">
+			<h2>Sign In</h2>
+			 <label>
+				<span>Email Address</span>
+				<input type="email" name="email">
+			</label>
+			<label>
+				<span>Password</span>
+				<input type="password" name="password">
+			</label>
+			<button class="submit" type="button">Sign In</button>
+			<form>
+				<div class="checkbox">
+					<label for="me"><input type="checkbox"/><span id="me" onmouseover="mouseOver()" onmouseout="mouseOut()">Remember Me</span></label>
+				</div>
+			</form>
+			<div class="social-media">
+				<ul>
+					<li><img src="github.png"></li>
+					<li><a  href ="https://twitter.com/EnochVlad"><img src="twitter.png"></a></li>
+					<li><a href ="https://www.pinterest.ie/VladXEnochInc/"><img src="pinterest.png"></a></li>
+					<li><a href ="https://www.instagram.com/vladxenoch/"><img src="instagram.png"></a></li>
+				</ul>
+			</div>
+		</div>
+
+	<!-- Switch Tab-->
+	<div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>New around these parts?</h2>
+          <p>Sign up and discover our endless collection of sweet treats!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>Already part of the crew?</h2>
+          <p>If you already has an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+
+	  <!-- Sign Up Tab-->
+      <div class="form sign-up">
+        <h2>Sign Up</h2>
+        <label>
+          <span>Name</span>
+          <input type="text">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email">
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password">
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password">
+        </label>
+        <button type="button" class="submit">Sign Up Now</button>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="login_script.js"></script>
+</body>
+<html>

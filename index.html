@@ -5,7 +5,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fp_CSS.css">
     <link rel="stylesheet"  href="index_style.css" >
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -42,24 +41,31 @@
               <a class="btn active" onclick="filterSelection('all')"> Show all</a>
               <a class="btn" onclick="filterSelection('Cakes')"> Cakes</a>
               <a class="btn" onclick="filterSelection('Ice-Cream')"> Ice-Cream</a>
+              <a class="btn" onclick="filterSelection('Mixed Flavour')">Mixed Flavour</a>
             </div>
           </div>
       </div>
     </section>
     <div class="DisplayCakes">
-      <div class= "filterDiv Cakes">
-        <img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img>
-        <img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img>
-      </div>
+      <div class= "filterDiv Cakes Mixed Flavour"><img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Cakes"><img href = "cake2.html" src = "cake2.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Cakes Mixed Flavour"><img href = "cake3.html" src = "cake3.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Cakes"><img href = "cake4.html" src = "cake4.jpg" height = "200px" width="200px" ></img></div>
+
       <div class= "filterDiv Ice-Cream"><img href = "#" src = "icecream1.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Ice-Cream"><img href = "#" src = "icecream2.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Ice-Cream Mixed Flavour"><img href = "#" src = "icecream3.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Ice-Cream Mixed Flavour"><img href = "#" src = "icecream4.jpg" height = "200px" width="200px" ></img></div>
+
+      </div>
     </div>
     <footer><!-- This is the Footer bar-->
 		<div class= "social-media">
 			<ul>
-				<li><img src="black-github.png"></li>
-				<li><img src="black-instagram.png"></li>
-				<li><img src="black-pinterest.png"></li>
-				<li><img src="black-twitter.png"></li>
+        <li><a  href ="https://twitter.com/EnochVlad"><img src="black-github.png"></a></li>
+        <li><a href ="https://www.instagram.com/vladxenoch/"><img src="black-instagram.png"></a></li>
+        <li><a href ="https://www.pinterest.ie/VladXEnochInc/"><img  src="black-pinterest.png"></a></li>
+        <li><a href ="https://twitter.com/EnochVlad" ><img src="black-twitter.png"></a></li>
 			</ul>
 		</div>
         <div class="wrapp">
@@ -84,6 +90,8 @@
 		</div>
 	</footer>
   <script type="text/javascript" src="index_script.js"></script>
+  <script type="text/javascript" src="jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="image-fader.js"></script>
   <script> function start(){ browserDetection(); myTimer(); hitCount(); scrollBox(); }</script>
   </body>
 </html>

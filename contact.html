@@ -4,11 +4,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="fp_CSS.css">
+    <meta name="description" content="Contact Page">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="index_style.css" >
+    <link rel="stylesheet" type="text/css" href="contact_style.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body >
+  <body>
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -23,16 +26,40 @@
         <li><a href = "login.html">Login <i class="fa fa-fw fa-user"></i> </a></li>
       </ul>
     </nav>
-    <section>
-    </section>
-    </div>
+    <main><!--This Is The Main Content-->
+    <!---Contact-Form Container--->
+    	<section>
+    		<!---Contact Box--->
+    		<div class="contact-box">
+    		<!---Heading--->
+    			<div class="c-heading">
+    				<h1>Get In <span class="blend">Touch!</span></h1>
+    					<p>Call Or Email Us Regarding Any Queries</p>
+    			</div>
+    		<!---Inputs--->
+    		<div class="c-inputs">
+    			<form>
+    				<input type="text" placeholder="Full Name"/>
+    				<input type="email" placeholder="Example@mail.com"/>
+    				<textarea name="message" placeholder="Enter Message Here"></textarea>
+    				<!---Sumbit Button--->
+    				<button>SEND</button>
+    			</form>
+    		</div>
+    		</div>
+    	<!---Map--->
+    	<div class="map">
+    	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38093.31009324901!2d-6.325006657530432!3d53.36416362546698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c2089d84a1d%3A0x6e1d03e3d62489ae!2sTU%20Dublin%20Kevin%20Street!5e0!3m2!1sen!2sie!4v1605482757871!5m2!1sen!2sie" width="1000" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    	</div>
+    	</section>
+    </main>
     <footer><!-- This is the Footer bar-->
     <div class= "social-media">
       <ul>
-        <li><img src="black-github.png"></li>
-        <li><img src="black-instagram.png"></li>
-        <li><img src="black-pinterest.png"></li>
-        <li><img src="black-twitter.png"></li>
+        <li><a  href ="https://twitter.com/EnochVlad"><img src="black-github.png"></a></li>
+        <li><a href ="https://www.instagram.com/vladxenoch/"><img src="black-instagram.png"></a></li>
+        <li><a href ="https://www.pinterest.ie/VladXEnochInc/"><img  src="black-pinterest.png"></a></li>
+        <li><a href ="https://twitter.com/EnochVlad" ><img src="black-twitter.png"></a></li>
       </ul>
     </div>
         <div class="wrapp">
@@ -44,7 +71,6 @@
       <p>Copyright &copy; Vlads & Enoch Online Website|
       <a href="index.html">VE Inc</a></p>
 
-      </form>
     </div>
   </footer>
   </body>
