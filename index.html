@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- Created By Vlads Drobovics & Enoch Oppong -->
+      <!-- -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -30,7 +31,7 @@
         <img src = "VEinc..gif" width = "300px" height="100px" ></img>
       </div>
       <div class = "wrapper">
-        <input type ="text" class = "input" placeholder = "Search...">
+        <input type ="text"  id="myInput" class = "input" onkeyup="filterFunction()" onclick="Displayfilter()"  placeholder = "Search...">
         <div class = "searchbtn">
             <i class = "fas fa-search"></i>
         </div>
@@ -46,8 +47,20 @@
           </div>
       </div>
     </section>
+    <ul id = "myUL">
+      <!-- This search will filter the items in the main page -->
+      <li><a class="btn" onclick="filterSelection('Cakes')" href="#">Cakes</a></li>
+      <li><a class="btn" onclick="filterSelection('Ice-Cream')"href="#">Ice-Cream</a></li>
+      <li><a class="btn" onclick="filterSelection('Mixed Flavour')"href="#">Mixed Flavour</a></li>
+      <!-- This will display all pages-->
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+
     <div class="DisplayCakes">
-      <div class= "filterDiv Cakes Mixed Flavour"><img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img></div>
+      <div class= "filterDiv Cakes Mixed Flavour"><a href = "cake1.html"><img href = "cake1.html" src = "cake1.jpg" height = "200px" width="200px" ></img></a></div>
       <div class= "filterDiv Cakes"><img href = "cake2.html" src = "cake2.jpg" height = "200px" width="200px" ></img></div>
       <div class= "filterDiv Cakes Mixed Flavour"><img href = "cake3.html" src = "cake3.jpg" height = "200px" width="200px" ></img></div>
       <div class= "filterDiv Cakes"><img href = "cake4.html" src = "cake4.jpg" height = "200px" width="200px" ></img></div>
@@ -62,7 +75,7 @@
     <footer><!-- This is the Footer bar-->
 		<div class= "social-media">
 			<ul>
-        <li><a  href ="https://twitter.com/EnochVlad"><img src="black-github.png"></a></li>
+        <li><a  href ="https://github.com/VladsD-RTV/Wev-Dev"><img src="black-github.png"></a></li>
         <li><a href ="https://www.instagram.com/vladxenoch/"><img src="black-instagram.png"></a></li>
         <li><a href ="https://www.pinterest.ie/VladXEnochInc/"><img  src="black-pinterest.png"></a></li>
         <li><a href ="https://twitter.com/EnochVlad" ><img src="black-twitter.png"></a></li>

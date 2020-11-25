@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet"  href="index_style.css" >
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script type="text/javascript" src="cart.js"></script>
-    <script type="text/javascript" src="jquery-3.5.1.js"></script>
   </head>
   <body >
     <nav>
@@ -17,7 +15,7 @@
       </label>
       <label class="logo">V&E.inc</label>
       <ul>
-        <li><a class = "active" href = "cart.html"><i class="fas fa-cart-plus"></i></a></li>
+        <li><a href = "cart.html"><i class="fas fa-cart-plus"></i></a></li>
         <li><a href = "index.html">Home <i class="fa fa-fw fa-home"></i></a></li>
         <li><a href = "about.html">About <i class="fas fa-address-card"></i></a></li>
         <li><a href = "contact.html">Contact <i class="fas fa-mobile-alt"></i></a></li>
@@ -25,37 +23,20 @@
       </ul>
     </nav>
     <section>
-      <div class = "ProductDetails">
-        <table id = "tableDiv">
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-          </tr>
-          <tr >
-            <td>
-              <div class = "cart-info">
-                  <img src= "cake1.jpg">
-                  <div>
-                      <p> Chocolate Cake</p>
-                      <small>Price $30.00<small>
-                        <br>
-                      <a onclick="ItemGone()">Remove</a>
-                  </div>
-              </div>
-            </td>
-            <td><input type="number" value = "1"></td>
-            <td>$30.00</td>
-          </tr>
-        </table>
-        <div class = "total-price">
-          <table>
-            <tr>
-              <td>Total</td>
-              <td>$30.00</td>
-            </tr>
-          </table>
-        </div>
+      <div class = "cake1Pos">
+        <img href = "cake1.html" src = "cake1.jpg" height = "400px" width="400px">
+      </div>
+      <div class = "cake1Text">
+        <p> A Wonderful Chocolate cake worth every penny, Our number one seller,<br>
+          Perfect for birthdays, this is a foolproof and really easy chocolate cake recipe.<br> It’s so moist and fudgy and will keep well for 4–5 days.<br>
+          Each serving provides<br> 477 kcal,<br> 6.5g protein,<br> 56g carbohydrates (of which 40g sugars),<br> 25g fat (of which 10.5g saturates),<br> 2.5g fibre and 0.6g salt.
+          <br>
+        </p>
+        <p class = "priceColor">Price : $30</p>
+      </div>
+      <div class = "AddtoCartBTNLocation">
+        <button class = "AddtoCartBTN" value ="show" onclick = "ItemAppear()"><a href = "cart.html"><i class="fas fa-cart-plus">Add to Cart</i></a></button>
+
       </div>
     </section>
     <footer><!-- This is the Footer bar-->
